@@ -1,0 +1,109 @@
+<!--
+  Generated template for the FormClientePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cadastro de Clientes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+<ion-list>
+    <div style="border: 1">
+      <label>Dados Básicos</label>
+      <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input [(ngModel)]="cliente.nome" type="text"></ion-input>
+      </ion-item>
+
+       <ion-item>
+        <ion-label floating>Idade</ion-label>
+        <ion-input [(ngModel)]="cliente.idade" type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>CPF</ion-label>
+        <ion-input [(ngModel)]="cliente.cpf" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>RG</ion-label>
+        <ion-input [(ngModel)]="cliente.rg" type="text"></ion-input>
+      </ion-item>
+    </div>
+    <br>
+    <div style="border: 10px">
+      <label>Endereço</label>
+      <ion-item>
+        <ion-label floating>Logradouro</ion-label>
+        <ion-input [(ngModel)]="cliente.logradouro" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Número</ion-label>
+        <ion-input [(ngModel)]="cliente.numero" type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Complemento</ion-label>
+        <ion-input [(ngModel)]="cliente.complemento" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Bairro</ion-label>
+        <ion-input [(ngModel)]="cliente.bairro" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Cidade</ion-label>
+          <ion-select [(ngModel)]="cliente.cidade">
+            <ion-option value="Ananindeua - Pa">Ananindeua - Pa</ion-option>
+            <ion-option value="Belém - Pa">Belém - Pa</ion-option>
+            <ion-option value="Outro">Outro</ion-option>
+          </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>CEP</ion-label>
+        <ion-input [(ngModel)]="cliente.cep" type="text"></ion-input>
+      </ion-item>
+    </div>
+    <br>
+    <div style="border: 1px">
+      <label>Dados Financeiros</label>
+        
+        <ion-item>
+        <ion-label floating>Renda(R$)</ion-label>
+        <ion-input [(ngModel)]="cliente.renda" type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Pendência SPC/Serasa</ion-label>
+          <ion-select [(ngModel)]="cliente.pendenciaFinanceira">
+            <ion-option value="Sim">Sim</ion-option>
+            <ion-option value="Não">Não</ion-option>
+          </ion-select>
+        </ion-item>
+
+      <ion-item>
+          <ion-label>Crediário</ion-label>
+          <ion-select [(ngModel)]="cliente.crediario">
+            <ion-option value="Sim">Sim</ion-option>
+            <ion-option value="Não">Não</ion-option>
+          </ion-select>
+        </ion-item>
+  </div>
+  <div style="height:30px"></div>
+  <button ion-button block (click)="cadastrar()">Cadastrar</button>
+</ion-list>
+
+</ion-content>
