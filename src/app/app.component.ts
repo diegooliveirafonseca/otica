@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import {BackandService} from '@backand/angular2-sdk'
 import {ListaClientePage} from '../pages/lista-cliente/lista-cliente';
 import {ListaProdutoPage} from '../pages/lista-produto/lista-produto';
+import {LoginPage} from '../pages/login/login';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import {ListaProdutoPage} from '../pages/lista-produto/lista-produto';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 

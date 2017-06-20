@@ -1,0 +1,45 @@
+<!--
+  Generated template for the SingupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="page2">
+
+
+    <h2>Sign Up</h2>
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input [(ngModel)]="singup.email" type="email" ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>First Name</ion-label>
+            <ion-input   [(ngModel)]="singup.firstName" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Last Name</ion-label>
+            <ion-input type="text"  [(ngModel)]="singup.lastName"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"  [(ngModel)]="singup.signUpPassword"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input type="password" [(ngModel)]="singup.confirmPassword"></ion-input>
+        </ion-item>
+        <!-- <h4 style="color:red;" ng-bind="vm.errorMessage"></h4> -->
+        <br>  
+        <button ion-button (click)="signUp()" color="success">Cadastrar</button>
+
+    </ion-list>
+</ion-content>

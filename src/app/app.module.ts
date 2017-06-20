@@ -14,6 +14,8 @@ import {ListaProdutoPage} from '../pages/lista-produto/lista-produto';
 import {FormProdutoPage} from '../pages/form-produto/form-produto';
 import {ListaClientePage} from '../pages/lista-cliente/lista-cliente';
 import {FormClientePage} from '../pages/form-cliente/form-cliente';
+import {LoginPage} from '../pages/login/login';
+import {SingupPage} from '../pages/singup/singup';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import {FormClientePage} from '../pages/form-cliente/form-cliente';
     ListaProdutoPage,
     FormProdutoPage,
     ListaClientePage,
-    FormClientePage
+    FormClientePage,
+    LoginPage,
+    SingupPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ import {FormClientePage} from '../pages/form-cliente/form-cliente';
     ListaProdutoPage,
     FormProdutoPage,
     ListaClientePage,
-    FormClientePage
+    FormClientePage,
+    LoginPage,
+    SingupPage
   ],
   providers: [
     StatusBar,
